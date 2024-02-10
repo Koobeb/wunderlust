@@ -30,8 +30,8 @@
         </section>
 
         <section>
-          <h2>Plan Your Trip</h2>
-          <h3>How to Get there</h3>
+          <h3>Plan Your Trip</h3>
+          <h4>How to Get there</h4>
 
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -43,7 +43,7 @@
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <polyline points="9 6 15 12 9 18" /></svg></a>
             
-          <h3>Places to Stay</h3>
+          <h4>Places to Stay</h4>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6" />
@@ -54,7 +54,7 @@
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <polyline points="9 6 15 12 9 18" /></svg></a>
           
-          <h3>Things to do</h3>
+          <h4>Things to do</h4>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sailboat" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1" />
@@ -67,7 +67,7 @@
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <polyline points="9 6 15 12 9 18" /></svg></a>
           
-          <h3>Where to Eat</h3>
+          <h4>Where to Eat</h4>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
@@ -145,21 +145,57 @@
         </section>
 
         <h2>Contact Us</h2>
-        First Name (Enter first name)
-        Last Name (Enter last name)
+        <form action="wunderlust.php">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname">
+          
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname">
+          
+          <fieldset>
+            <legend>Contact Method</legend>
+            <input type="radio" id="email" name="contact">
+            <label for="email">Email</label>
+            <input type="radio" id="text" name="contact">
+            <label for="text">Text</label>
+            <input type="radio" id="phone" name="contact">
+            <label for="phone">Phone</label>
+          </fieldset>
+        
+          <label for="email2">Email Address</label>
+          <input type="text" id="email2">
 
-        Contact Method (Email, Text, Phone)
-        Email Address (Enter Email)
-        Phone Number (Enter telephone number)
+          <label for="phone2">Phone Number</label>
+          <input type="text" id="phone2">
+          
+          <label for="dest">Destination</label>
+          <select name="destinations" id="dest">
+            <option value="Barcelona">Barcelona</option>
+            <option value="Granada">Granada</option>
+            <option value="Ibiza">Ibiza</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Majorca">Majorca</option>
+            <option value="Seville">Seville</option>
+            <option value="Tenerife">Tenerife</option>
+            <option value="Valencia">Valencia</option>
+          </select>
 
-        Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-        Travel Time (Fall, Winter, Spring, Summer, Flexible)
-    
+          <label for="trav">Travel Time</label>
+          <select name="traveltime" id="trav">
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Flexible">Flexible</option>
+          </select>
+          
+          <input type="submit" value="submit">
+        </form>
 
     <footer>
-        Copyright 2021 Wunderlust
-        Privacy Statement
-        Terms of Service
+        <small>Copyright 2021 Wunderlust
+        <a href="index.html">Privacy Statement</a>
+        <a href="index.html">Terms of Service</a></small>
         
     </footer>
   </body>
