@@ -51,6 +51,14 @@ table {
 
 /* End of CSS Reset */
 
+h1, h2, h3 {
+  font-family:molle;
+}
+
+h4, p, q, small, nav, button, form {
+  font-family:montserrat;
+}
+
 #skip {
     position:absolute;
     left:-10000px;
@@ -75,74 +83,147 @@ table {
     overflow:hidden;
     }
 
-/* HAMBURGER MENU IS PAIN :( */
+/* Hamburger Menu Goes Here */
 
-#menu-toggle {
-    display: block;
-    position: relative;
-    top: -80px;
-    left: 500px;  
-    z-index: 1;  
-  }
+header {
+  background:linear-gradient(#55BCD5,white)
+}
 
-#menu-toggle a {
-    text-decoration: none;
-    color: #232323;
-    -webkit-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-  }
+body h1, body p, body h2, body h3 {
+  padding-left:30px;
+}
 
-#menu-toggle a:hover {
-    color: #4f7794;
-  }
+h1 {
+  font-size:90px;
+  padding-top:30px;
+}
 
-#menu-toggle input {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: -7px;
-    left: -5px;  
-    padding: 0;
-    cursor: pointer;  
-    opacity: 0;
-    z-index: 2;
-  }
+header p {
+  font-size:36px;
+  line-height:45px
+}
 
-  #menu-toggle label {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-color:#F6D64A;
-  }
+h2, h3 {
+  font-size:70px;
+}
 
-#menu-toggle input:checked + label {
-    background: #232323;
-    color:white;
-  }
+h4 {
+font-size:40px;
+font-weight:bold;
+}
 
-#menu-toggle ul {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #ededed;
-    list-style-type: none;
-    /* Hide the menu off-screen to the left */
-    left: -200%;
-    -webkit-transition: left 0.3s ease;
-    -o-transition: left 0.3s ease;
-    transition: left 0.3s ease; 
-  }
+main p, main q {
+  font-size:30px;
+  line-height:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
 
-#menu-toggle li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
+#img-grid img{
+  padding-bottom:25px;
+  width:700px;
+  height:550px;
+}
 
-#menu-toggle input:checked ~ ul {
-    left: 0;
-  }
+#plan {
+  background-color:#F6D64A;
+  padding-top:35px;
+  padding-bottom:30px;
+}
+
+#plan h3 {
+  padding-bottom:25px;
+}
+
+#plan {
+  text-align:center;
+}
+
+#plan section {
+  margin-top:30px;
+  margin-bottom:10px;
+  margin-left:80px;
+  margin-right:80px;
+  background-color:#55BCD5;
+  padding-top:25px;
+  padding-bottom:40px;
+  border-radius:10px;
+  outline-style:solid;
+  outline-color:white;
+  outline-width:5px;
+}
+
+#plan h4 {
+  padding-bottom:30px;
+  text-transform:uppercase;
+}
+
+#testimonials {
+  padding-top:40px;
+}
+
+#testimonials section {
+  text-align:center;
+  padding-top:25px;
+}
+
+q {
+  quotes:initial;
+}
+#about {
+  background-color:#499BD2;
+  padding-top:50px;
+}
+
+#about section {
+  display:inline-block;
+  text-align:center;
+  padding-left:15px;
+  padding-top:25px;
+  padding-right:15px;
+}
+
+#contact span {
+  font-family:montserrat;
+  font-size:30px;
+}
+
+#contact {
+  padding-top:25px;
+  margin-left:50px;
+}
+
+#contact h3 {
+  padding-left:0;
+  padding-bottom:25px;
+  padding-top:25px;
+}
+
+#contact label {
+  font-size:25px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+#contact div span {
+  color:#9B26B0;
+}
+
+#contact fieldset span {
+  color:black;
+  font-weight:lighter;
+  text-transform:none;
+}
+
+#contact input {
+  padding-right:350px;
+  padding-top:20px;
+  padding-bottom:20px;
+  display:flex;
+  margin-bottom:25px;
+}
+
+footer {
+  background:#EAEAEA;
+}
+
