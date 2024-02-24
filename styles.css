@@ -1,0 +1,148 @@
+/* Hi, this is Kaleb Nichols :) */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of CSS Reset */
+
+#skip {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+ 
+#skip:focus {
+    position:static;
+    width:auto;
+    height:auto;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
+
+/* HAMBURGER MENU IS PAIN :( */
+
+#menu-toggle {
+    display: block;
+    position: relative;
+    top: -80px;
+    left: 500px;  
+    z-index: 1;  
+  }
+
+#menu-toggle a {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+
+#menu-toggle a:hover {
+    color: #4f7794;
+  }
+
+#menu-toggle input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    left: -5px;  
+    padding: 0;
+    cursor: pointer;  
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menu-toggle label {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color:#F6D64A;
+  }
+
+#menu-toggle input:checked + label {
+    background: #232323;
+    color:white;
+  }
+
+#menu-toggle ul {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    /* Hide the menu off-screen to the left */
+    left: -200%;
+    -webkit-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    transition: left 0.3s ease; 
+  }
+
+#menu-toggle li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+#menu-toggle input:checked ~ ul {
+    left: 0;
+  }
