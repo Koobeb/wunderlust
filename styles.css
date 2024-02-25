@@ -85,6 +85,66 @@ h4, p, q, small, nav, button, form {
 
 /* Hamburger Menu Goes Here */
 
+nav {
+    background-color: black;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle {
+    display: none;
+}
+
+#menu-toggle label {
+    display: block;
+    background-color: #F6D64A;
+    color: black;
+    padding: 20px 70px;
+    cursor: pointer;
+    text-align: center;
+    font-size:25px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+#toggle:checked + label + ul {
+    display: block;
+    width: 100%;
+}
+
+#toggle:checked + label {
+    width: 380px; 
+}
+
+li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+#toggle:checked +  label +  ul li {
+    background-color: #55BCD5;
+    border: 1px solid #000;
+}
+
 header {
   background:linear-gradient(#55BCD5,white)
 }
@@ -110,6 +170,10 @@ h2, h3 {
 h4 {
 font-size:40px;
 font-weight:bold;
+}
+
+#intro {
+  padding-top:50px;
 }
 
 main p, main q {
@@ -170,17 +234,16 @@ main p, main q {
 q {
   quotes:initial;
 }
+
 #about {
-  background-color:#499BD2;
-  padding-top:50px;
+  background-color: #499BD2;
+  padding-top: 50px;
 }
 
 #about section {
-  display:inline-block;
-  text-align:center;
-  padding-left:15px;
-  padding-top:25px;
-  padding-right:15px;
+  display: inline-block;
+  text-align: center;
+  padding: 25px 15px;
 }
 
 #contact span {
