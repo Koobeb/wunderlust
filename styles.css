@@ -101,7 +101,6 @@ nav {
     background-color: #F6D64A;
     color: black;
     padding: 20px 70px;
-    cursor: pointer;
     text-align: center;
     font-size:25px;
     text-transform:uppercase;
@@ -125,7 +124,9 @@ ul {
 }
 
 #toggle:checked + label {
-    width: 380px; 
+    width: 380px;
+    background:#000; 
+    color:white;
 }
 
 li {
@@ -246,47 +247,53 @@ q {
   padding: 25px 15px;
 }
 
-#contact span {
-  font-family:montserrat;
-  font-size:30px;
-}
-
 #contact {
-  padding-top:25px;
-  margin-left:50px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 #contact h3 {
-  padding-left:0;
-  padding-bottom:25px;
-  padding-top:25px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-#contact label {
-  font-size:25px;
-  font-weight:bold;
-  text-transform:uppercase;
+#contact .form-required {
+  font-family:montserrat;
+  font-size:30px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-#contact div span {
-  color:#9B26B0;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
-#contact fieldset span {
-  color:black;
-  font-weight:lighter;
-  text-transform:none;
-}
-
-#contact input {
-  padding-right:350px;
-  padding-top:20px;
-  padding-bottom:20px;
-  display:flex;
-  margin-bottom:25px;
+#mySubmit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
 }
 
 footer {
+  text-align: center;
   background:#EAEAEA;
+  padding: 20px 0;
 }
 
+footer p, footer a {
+  margin: 5px;
+  font-family:montserrat;
+}
