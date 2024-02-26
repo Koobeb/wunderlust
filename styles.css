@@ -86,14 +86,13 @@ h4, p, q, small, nav, button, form {
 /* Hamburger Menu Goes Here */
 
 nav {
-    background-color: black;
     position: fixed;
     top: 20px;
     right: 20px;
 }
 
 #toggle {
-    display: none;
+  display: none;
 }
 
 #menu-toggle label {
@@ -124,7 +123,7 @@ ul {
 }
 
 #toggle:checked + label {
-    width: 380px;
+    width: 450px;
     background:#000; 
     color:white;
 }
@@ -205,17 +204,11 @@ main p, main q {
 }
 
 #plan section {
-  margin-top:30px;
-  margin-bottom:10px;
-  margin-left:80px;
-  margin-right:80px;
-  background-color:#55BCD5;
-  padding-top:25px;
-  padding-bottom:40px;
-  border-radius:10px;
-  outline-style:solid;
-  outline-color:white;
-  outline-width:5px;
+  margin: 30px 80px 10px;
+  background-color: #55BCD5;
+  padding: 25px 80px 40px;
+  border-radius: 10px;
+  outline: 5px solid white;
 }
 
 #plan h4 {
@@ -268,25 +261,35 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 15px;
+input[type="email"], input[type="text"], input[type="tel"], select {
+  width: 85%;
+  padding: 15px;
+  margin-bottom: 10px;
+  outline-color: #9B26B0;
+  outline-style:solid;
+}
+
+input[type="radio"] {
+  accent-color:#9B26b0;
+}
+
+fieldset label {
+  font-weight:lighter;
 }
 
 #mySubmit {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #9B26B0;
   color: #fff;
   border: none;
   font-size: 16px;
 }
 
+.required {
+  color:#9B26B0;
+}
 footer {
   text-align: center;
   background:#EAEAEA;
@@ -296,4 +299,100 @@ footer {
 footer p, footer a {
   margin: 5px;
   font-family:montserrat;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:100px;
+  }
+
+  nav {
+    margin-top: 20px;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  ul {
+    display: flex;
+    gap:25px;
+    padding-right:250px;
+  }
+
+  li {
+    background:white;
+    padding:25px;
+  }
+
+  li:hover {
+    background:#F6D64A;
+  }
+
+  nav a {
+    color: #000;
+    font-weight:bold;
+    text-transform:uppercase;
+  }
+
+  #menu-toggle label {
+    display: none;
+  }
+
+  #img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#img-grid img {
+    width: 100%;
+    height: auto;
+}
+
+#img-grid picture {
+    grid-column: span 2;
+}
+
+#plan div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding:30px;
+}
+
+#plan section {
+  margin: 0;
+  padding: 20px;
+}
+
+#testimonials div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#testimonials section {
+  max-width: 375px;
+  margin: auto;
+}
+
+}
+
+
+@media only screen and (min-width:1200px) {  
+  
+nav {
+  position: fixed;
+  margin-top:0px;  
+}
+
+#plan div {
+  display: flex;
+}
+
+#testimonials div {
+  display: flex;
+}
+
 }
